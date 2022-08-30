@@ -36,3 +36,5 @@ client.on('clickButton', async (button) => {
         let row = new MessageActionRow()
             .addComponent editbtn
 button.message.edit embed: color: 2223, title: `**fixed bug**`, description: `**fixed bug by**: <@${button.clicker.user.id}> `, component: row
+
+//bugs fixed
