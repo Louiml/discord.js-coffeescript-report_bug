@@ -6,7 +6,7 @@ require('discord-buttons')(client);
 client.connect token: "token";
 
 client.Dispatcher.on "GATEWAY_READY", (e) ->
-  console.log "the bot is ready"
+  console.lof "the bot is ready"
   
   client.Dispatcher.on "message", (message) ->
 if (message.content !== `${config.command}`) return;
@@ -26,7 +26,7 @@ if (message.content !== `${config.command}`) return;
             .addComponent btn
   message.channel.send button: reportbtn, embed: embed 
 
-client.on('clickButton', async (button) => {
+client.Dispatcher.on 'clickButton', async (button) => {
     if (button.id !== "fixed") return;
     let editbtn = new MessageButton()
     .setStyle "green"
