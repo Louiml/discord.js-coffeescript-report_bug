@@ -37,4 +37,4 @@ client.Dispatcher.on 'clickButton', async (button) => {
             .addComponent editbtn
 button.message.edit embed: color: 2223, title: `**fixed bug**`, description: `**fixed bug by**: <@${button.clicker.user.id}> `, component: row
 
-//bugs fixed
+#bugs fixed
